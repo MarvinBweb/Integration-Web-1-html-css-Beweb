@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>mon-compte-employeur</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header-container">
+      <h1 class="logo">
+        MON COMPTE
+        <img src="image/cadenas.png" alt="cadenas" width="20" height="20" />
+      </h1>
+
+      <p class="dnase-alert">⚠ Derniers jours pour votre DNAS!</p>
+
+      <div class="header-right">
+        <!-- Messagerie et Déconnexion sur la même ligne -->
+        <div class="header-actions">
+          <a href="mailto:adresse@example.com" class="messagerie-link"
+            >messagerie(2)</a
+          >
+          <a href="deconnexion.html" class="btn-deconnexion">Déconnexion ✖</a>
+        </div>
+
+        <!-- Ligne sous Déconnexion -->
+        <div class="header-info">
+          <span>Entreprise : XXXXXXXXXXXXX</span>
+          <span>Numéro SIRET : 000000000000000</span>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <img
+          src="image/domicile.png"
+          class="maison"
+          alt="maison"
+          width="45"
+          height="45"
+        />
+        <li><a href="page.html">MES INFOS</a></li>
+        <li><a href="page.html">MES AUTORISATION D'ACCES</a></li>
+        <li><a href="page.html">MES SALARIES</a></li>
+        <li><a href="page.html">MES COTISATIONS</a></li>
+        <li><a href="page.html">MES CONTRATS</a></li>
+        <li><a href="page.html">MES OPERATIONS</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-container">
+      <div class="left-column">
+        <h2>Bienvenue Entreprise XXXXXXXXXXXXX</h2>
+        <section class="coordonnees">
+          <h3>
+            <img
+              src="image/punaise.png"
+              alt="coordonnees"
+              width="20"
+              height="20"
+            />Coordonnées
+          </h3>
+          <br />
+          <p>
+            <img
+              src="image/icon.png"
+              alt="siret"
+              width="20"
+              height="20"
+            /><strong>SIRET</strong>: 000000000000000
+          </p>
+          <br />
+          <p>
+            <img
+              src="image/accueil.png"
+              alt="adresse"
+              width="20"
+              height="20"
+            /><strong>Adresse</strong> 298 boulevard Voltaire
+          </p>
+          <blockquote style="text-indent: 7%">75002 PARIS</blockquote>
+          <p>
+            <img
+              src="image/raccrocher.png"
+              alt="telephone"
+              width="20"
+              height="20"
+            /><strong>Téléphone</strong>: 02 02 02 02 02
+          </p>
+          <br />
+          <p>
+            <img
+              src="image/envelope.png"
+              alt="mail"
+              width="20"
+              height="20"
+            /><strong>Adresse mail</strong>: xxxxxxxx.paris@gmail.com
+          </p>
+        </section>
+
+        <section class="operation">
+          <h3>
+            <img
+              src="image/drapeau.png"
+              alt="Dernière_operation"
+              width="20"
+              height="20"
+            />Dernières opérations
+          </h3>
+          <br />
+
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Objet</th>
+                <th>Numéro d'opération</th>
+                <th>Auteur</th>
+                <th>Etat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08/03/2014</td>
+                <td>Mise à jour</td>
+                <td>17</td>
+                <td>Profil 2</td>
+                <td>Brouillon</td>
+              </tr>
+              <tr>
+                <td>28/02/2014</td>
+                <td>Affiliation</td>
+                <td>16</td>
+                <td>Profil 1</td>
+                <td>Brouillon</td>
+              </tr>
+              <tr>
+                <td>27/02/2014</td>
+                <td>Mise à jour</td>
+                <td>15</td>
+                <td>ADMIN</td>
+                <td>Validé</td>
+              </tr>
+              <tr>
+                <td>25/02/2014</td>
+                <td>Mise à jour</td>
+                <td>14</td>
+                <td>Profil 1</td>
+                <td>Validé</td>
+              </tr>
+              <tr>
+                <td>10/02/2014</td>
+                <td>DNAS</td>
+                <td>13</td>
+                <td>ADMIN</td>
+                <td>Validé</td>
+              </tr>
+              <tr>
+                <td>23/01/2014</td>
+                <td>Mise à jour</td>
+                <td>17</td>
+                <td>Profil 2</td>
+                <td>Validé</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section class="droite">
+          <p><em>Dernière connexion: le 10/03/2014 à 14:08</em></p>
+
+          <article class="urgent">
+            <img
+              src="image/danger.png"
+              alt="urgent"
+              width="20"
+              height="20"
+            /><br />
+            <strong>Urgent</strong>
+            <p>
+              Il ne vous reste que 3 jours pour remplir la<br />
+              déclaration nominative annuelle des salaires (DNAS).<br />
+              Pour faire votre déclaration, <u>cliquez ici</u>.
+            </p>
+          </article>
+
+          <div class="right-column">
+            <article class="messagerie">
+              <h3>Messagerie</h3>
+              <img
+                src="image/envelope.png"
+                width="20"
+                height="20"
+                alt="messagerie"
+              /><br />
+              <a href="mailto:adresse@example.com"
+                ><u>Vous avez 2 messages non-lus</u>
+              </a>
+            </article>
+
+            <article class="contact">
+              <h3>Contact PRO BTP</h3>
+              <br />
+              <strong>votre conseiller : JEAN DUPONT</strong><br />
+              <img src="image/telephone.png" width="20" height="20" /><strong
+                >04 04 04 04 04</strong
+              ><br />
+              <img src="image/envelope.png" width="20" height="20" /><u
+                >Envoyer un email à mon conseiller</u
+              ><br />
+            </article>
+          </div>
+
+          <article class="important">
+            <h4>
+              <img src="image/eclair.png" width="20" height="20" />Important
+            </h4>
+            <p>
+              ▶ Nouveau : paiement des cotisations par chéque ou par<br />
+              prélèvement à l'échéance, c'est vous qui choisissez !
+            </p>
+            <p>
+              ▶ Arrêt de travail> 90 jours :<u
+                >ce qui change au 1er janvier 2014</u
+              >
+            </p>
+            <br />
+            <p>
+              ▶ Exonérations sociales et fiscales :<u
+                >conformité des contrats prévoyance / frais de santé</u
+              >
+            </p>
+            <p>
+              ▶
+              <a href="formulaire.html">Inscrivez-vous </a>au télépaiement
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
