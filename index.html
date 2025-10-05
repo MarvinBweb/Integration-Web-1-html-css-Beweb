@@ -1,253 +1,198 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <title>mon-compte-employeur</title>
-    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <title>Mon Compte Employeur</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet" />
   </head>
+  <body class="d-flex justify-content-center">
+  <div class="container my-4" style="max-width: 1200px;">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-between mb-4 pb-2 border-bottom">
+        <h1 class="d-flex align-items-center gap-2 m-0">
+          MON COMPTE
+          <img src="image/cadenas.png" alt="cadenas" width="20" height="20" />
+        </h1>
+        <p class="text-center fw-bold text-danger flex-grow-1 mb-0">
+          ⚠ Derniers jours pour votre DNAS!
+        </p>
+        <div class="d-flex flex-column align-items-end">
+          <div class="d-flex gap-3 mb-1">
+            <a
+              href="mailto:adresse@example.com"
+              class="text-decoration-underline text-dark"
+              >messagerie(2)</a
+            >
+            <a href="deconnexion.html" class="btn btn-outline-secondary"
+              >Déconnexion ✖</a
+            >
+          </div>
+          <div class="d-flex">
+            <span>Entreprise : XXXXXXXXXXXXX</span>
+            <span>Numéro SIRET : 000000000000000</span>
+          </div>
+        </div>
+      </header>
 
-  <body>
-    <header class="header-container">
-      <h1 class="logo">
-        MON COMPTE
-        <img src="image/cadenas.png" alt="cadenas" width="20" height="20" />
-      </h1>
+      <nav class="mb-4">
+  <div class="d-flex align-items-center gap-2 justify-content-center flex-wrap">
+    <img src="image/domicile.png" class="maison" alt="maison" width="45" height="45">
+    <a href="page.html">MES INFOS</a>
+    <a href="page.html">MES AUTORISATIONS D'ACCES</a>
+    <a href="page.html">MES SALARIES</a>
+    <a href="page.html">MES COTISATIONS</a>
+    <a href="page.html">MES CONTRATS</a>
+    <a href="page.html">MES OPERATIONS</a>
+  </div>
+</nav>
 
-      <p class="dnase-alert">⚠ Derniers jours pour votre DNAS!</p>
+      <main class="row justify-content-center g-4 text-center">
+        <div class="col-lg-8">
+          <h2 class="bienvenue">Bienvenue Entreprise XXXXXXXXXXXXX</h2>
 
-      <div class="header-right">
-        <!-- Messagerie et Déconnexion sur la même ligne -->
-        <div class="header-actions">
-          <a href="mailto:adresse@example.com" class="messagerie-link"
-            >messagerie(2)</a
-          >
-          <a href="deconnexion.html" class="btn-deconnexion">Déconnexion ✖</a>
+          <section class="coordonnees text-start">
+            <h3><i class="fas fa-thumbtack"></i> Coordonnées</h3>
+            <p>
+              <i class="fas fa-id-card"></i> <strong>SIRET</strong>:
+              000000000000000
+            </p>
+            <p>
+              <i class="fas fa-home"></i> <strong>Adresse</strong>: 298
+              boulevard Voltaire
+            </p>
+            <blockquote>75002 PARIS</blockquote>
+            <p>
+              <i class="fas fa-phone"></i> <strong>Téléphone</strong>: 02 02 02
+              02 02
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> <strong>Adresse mail</strong>:
+              xxxxxxxx.paris@gmail.com
+            </p>
+          </section>
+
+          <section class="operation text-center">
+            <h3><i class="fas fa-flag"></i> Dernières opérations</h3>
+            <table class="table table-bordered text-center mt-2">
+              <thead class="table-dark">
+                <tr>
+                  <th>Date</th>
+                  <th>Objet</th>
+                  <th>Numéro d'opération</th>
+                  <th>Auteur</th>
+                  <th>Etat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08/03/2014</td>
+                  <td>Mise à jour</td>
+                  <td>17</td>
+                  <td>Profil 2</td>
+                  <td>Brouillon</td>
+                </tr>
+                <tr>
+                  <td>28/02/2014</td>
+                  <td>Affiliation</td>
+                  <td>16</td>
+                  <td>Profil 1</td>
+                  <td>Brouillon</td>
+                </tr>
+                <tr>
+                  <td>27/02/2014</td>
+                  <td>Mise à jour</td>
+                  <td>15</td>
+                  <td>ADMIN</td>
+                  <td>Validé</td>
+                </tr>
+                <tr>
+                  <td>25/02/2014</td>
+                  <td>Mise à jour</td>
+                  <td>14</td>
+                  <td>Profil 1</td>
+                  <td>Validé</td>
+                </tr>
+                <tr>
+                  <td>10/02/2014</td>
+                  <td>DNAS</td>
+                  <td>13</td>
+                  <td>ADMIN</td>
+                  <td>Validé</td>
+                </tr>
+                <tr>
+                  <td>23/01/2014</td>
+                  <td>Mise à jour</td>
+                  <td>17</td>
+                  <td>Profil 2</td>
+                  <td>Validé</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
 
-        <!-- Ligne sous Déconnexion -->
-        <div class="header-info">
-          <span>Entreprise : XXXXXXXXXXXXX</span>
-          <span>Numéro SIRET : 000000000000000</span>
-        </div>
-      </div>
-    </header>
-
-    <nav>
-      <ul>
-        <img
-          src="image/domicile.png"
-          class="maison"
-          alt="maison"
-          width="45"
-          height="45"
-        />
-        <li><a href="page.html">MES INFOS</a></li>
-        <li><a href="page.html">MES AUTORISATION D'ACCES</a></li>
-        <li><a href="page.html">MES SALARIES</a></li>
-        <li><a href="page.html">MES COTISATIONS</a></li>
-        <li><a href="page.html">MES CONTRATS</a></li>
-        <li><a href="page.html">MES OPERATIONS</a></li>
-      </ul>
-    </nav>
-
-    <main class="main-container">
-      <div class="left-column">
-        <h2>Bienvenue Entreprise XXXXXXXXXXXXX</h2>
-        <section class="coordonnees">
-          <h3>
-            <img
-              src="image/punaise.png"
-              alt="coordonnees"
-              width="20"
-              height="20"
-            />Coordonnées
-          </h3>
-          <br />
-          <p>
-            <img
-              src="image/icon.png"
-              alt="siret"
-              width="20"
-              height="20"
-            /><strong>SIRET</strong>: 000000000000000
-          </p>
-          <br />
-          <p>
-            <img
-              src="image/accueil.png"
-              alt="adresse"
-              width="20"
-              height="20"
-            /><strong>Adresse</strong> 298 boulevard Voltaire
-          </p>
-          <blockquote style="text-indent: 7%">75002 PARIS</blockquote>
-          <p>
-            <img
-              src="image/raccrocher.png"
-              alt="telephone"
-              width="20"
-              height="20"
-            /><strong>Téléphone</strong>: 02 02 02 02 02
-          </p>
-          <br />
-          <p>
-            <img
-              src="image/envelope.png"
-              alt="mail"
-              width="20"
-              height="20"
-            /><strong>Adresse mail</strong>: xxxxxxxx.paris@gmail.com
-          </p>
-        </section>
-
-        <section class="operation">
-          <h3>
-            <img
-              src="image/drapeau.png"
-              alt="Dernière_operation"
-              width="20"
-              height="20"
-            />Dernières opérations
-          </h3>
-          <br />
-
-          <table>
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Objet</th>
-                <th>Numéro d'opération</th>
-                <th>Auteur</th>
-                <th>Etat</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>08/03/2014</td>
-                <td>Mise à jour</td>
-                <td>17</td>
-                <td>Profil 2</td>
-                <td>Brouillon</td>
-              </tr>
-              <tr>
-                <td>28/02/2014</td>
-                <td>Affiliation</td>
-                <td>16</td>
-                <td>Profil 1</td>
-                <td>Brouillon</td>
-              </tr>
-              <tr>
-                <td>27/02/2014</td>
-                <td>Mise à jour</td>
-                <td>15</td>
-                <td>ADMIN</td>
-                <td>Validé</td>
-              </tr>
-              <tr>
-                <td>25/02/2014</td>
-                <td>Mise à jour</td>
-                <td>14</td>
-                <td>Profil 1</td>
-                <td>Validé</td>
-              </tr>
-              <tr>
-                <td>10/02/2014</td>
-                <td>DNAS</td>
-                <td>13</td>
-                <td>ADMIN</td>
-                <td>Validé</td>
-              </tr>
-              <tr>
-                <td>23/01/2014</td>
-                <td>Mise à jour</td>
-                <td>17</td>
-                <td>Profil 2</td>
-                <td>Validé</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </div>
-
-      <div class="right-column">
-        <section class="droite">
+        <div class="col-lg-4 d-flex flex-column gap-3 text-start">
           <p><em>Dernière connexion: le 10/03/2014 à 14:08</em></p>
 
-          <article class="urgent">
-            <img
-              src="image/danger.png"
-              alt="urgent"
-              width="20"
-              height="20"
-            /><br />
-            <strong>Urgent</strong>
+          <article class="urgent text-center">
+            <i class="fas fa-exclamation-triangle"></i> <strong>Urgent</strong>
             <p>
-              Il ne vous reste que 3 jours pour remplir la<br />
-              déclaration nominative annuelle des salaires (DNAS).<br />
-              Pour faire votre déclaration, <u>cliquez ici</u>.
+              Il ne vous reste que 3 jours pour remplir la déclaration
+              nominative annuelle des salaires (DNAS). <br />Pour faire votre
+              déclaration, <u>cliquez ici</u>.
             </p>
           </article>
 
-          <div class="right-column">
-            <article class="messagerie">
+          <div class="d-flex gap-3">
+            <article class="messagerie flex-fill">
               <h3>Messagerie</h3>
-              <img
-                src="image/envelope.png"
-                width="20"
-                height="20"
-                alt="messagerie"
-              /><br />
-              <a href="mailto:adresse@example.com"
-                ><u>Vous avez 2 messages non-lus</u>
-              </a>
+              <i class="fas fa-envelope"></i>
+              <p><u>Vous avez 2 messages non-lus</u></p>
             </article>
 
-            <article class="contact">
+            <article class="contact flex-fill">
               <h3>Contact PRO BTP</h3>
-              <br />
-              <strong>votre conseiller : JEAN DUPONT</strong><br />
-              <img src="image/telephone.png" width="20" height="20" /><strong
-                >04 04 04 04 04</strong
-              ><br />
-              <img src="image/envelope.png" width="20" height="20" /><u
-                >Envoyer un email à mon conseiller</u
-              ><br />
+              <strong>votre conseiller : JEAN DUPONT</strong>
+              <p><i class="fas fa-phone"></i> 04 04 04 04 04</p>
+              <p>
+                <i class="fas fa-envelope"></i> Envoyer un email à mon
+                conseiller
+              </p>
             </article>
           </div>
 
           <article class="important">
-            <h4>
-              <img src="image/eclair.png" width="20" height="20" />Important
-            </h4>
+            <h4><i class="fas fa-bolt"></i> Important</h4>
             <p>
-              ▶ Nouveau : paiement des cotisations par chéque ou par<br />
-              prélèvement à l'échéance, c'est vous qui choisissez !
+              ▶ Nouveau : paiement des cotisations par chéque ou par prélèvement
+              à l'échéance, c'est vous qui choisissez !
             </p>
             <p>
-              ▶ Arrêt de travail> 90 jours :<u
-                >ce qui change au 1er janvier 2014</u
-              >
-            </p>
-            <br />
-            <p>
-              ▶ Exonérations sociales et fiscales :<u
-                >conformité des contrats prévoyance / frais de santé</u
-              >
+              ▶ Arrêt de travail> 90 jours :
+              <u>ce qui change au 1er janvier 2014</u>
             </p>
             <p>
-              ▶
-              <a href="formulaire.html">Inscrivez-vous </a>au télépaiement
+              ▶ Exonérations sociales et fiscales :
+              <u>conformité des contrats prévoyance / frais de santé</u>
+            </p>
+            <p>
+              ▶ <a href="formulaire.html">Inscrivez-vous </a>au télépaiement
             </p>
           </article>
-        </section>
-      </div>
-    </main>
-    <footer></footer>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+</html>
 </html>

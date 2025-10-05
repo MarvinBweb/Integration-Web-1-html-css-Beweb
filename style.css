@@ -1,279 +1,57 @@
-/* Reset de base */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  margin: 10;
-  padding: 10;
-  font-weight: bold;
-}
 body {
+  background-color: #f9f9f9;
   font-family: Arial, sans-serif;
-  line-height: 1.5;
-  padding: 10px;
 }
-
-/* Header */
-header {
-  background: #eee;
-  padding: 10px;
-}
-header h1 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.header-container {
-  display: flex;
-  align-items: center; /* aligne verticalement les éléments */
-  justify-content: space-between; /* espace entre gauche/centre/droite */
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
-  flex-wrap: wrap; /* pour que ça s'adapte aux petits écrans */
-}
-.header-right {
-  display: flex;
-  flex-direction: column; /* empilement : actions au-dessus, infos en dessous */
-  align-items: flex-end; /* tout aligné à droite */
-  gap: 5px; /* espace entre les lignes */
-}
-
-.header-actions {
-  display: flex; /* messagerie et bouton sur la même ligne */
-  gap: 20px; /* espace entre messagerie et déconnexion */
-}
-
-.header-info {
-  display: flex; /* entreprise et SIRET côte à côte */
-  gap: 20px;
-}
-
-.header-info span {
-  font-weight: normal; /* texte normal */
-  color: black; /* texte noir */
-}
-
-/* Logo à gauche */
-.logo {
-  flex: 1;
-  font-size: 1.5em;
-}
-
-/* Paragraphe DNAS centré */
-.dnase-alert {
-  flex: 2;
+.bienvenue {
+  font-weight: 900;
   text-align: center;
-  font-weight: bold;
-  /* rouge pour alerte */
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-
-/* Messagerie et déconnexion à droite */
-.header-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px; /* espace entre les deux liens */
+.coordonnees,
+.operation,
+.messagerie,
+.contact,
+.important,
+.urgent .formulaire {
+  border: 2px solid black;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
 }
-
-/* Styles des liens */
-.messagerie-link {
-  text-decoration: underline;
-  color: black;
+.urgent {
+  border: 3px dashed red;
+  animation: clignoter 1s infinite;
 }
-.messagerie-link:hover {
-  color: #333;
-}
-
-.btn-deconnexion {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-.btn-deconnexion:hover {
-  background-color: #ddd;
-}
-
-/* Navigation */
 .maison {
   border: 1px solid black;
   background-color: rgb(105, 224, 245);
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100%; /* prend toute la largeur de la page */
-}
-
-nav ul li {
-  flex: 1; /* chaque lien prend la même largeur */
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px 0; /* padding vertical */
-  border: 1px solid black; /* trait noir */
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  text-align: center;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3); /* ombre en bas */
-  border-radius: 0; /* coins droits pour coller parfaitement */
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-nav ul li a:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-1px); /* léger effet “relevé” */
-}
-
-.coordonnees {
-  border: 5px solid black;
-  padding: 15px;
-  margin-bottom: 30px;
-}
-
-.operation {
-  border: 5px solid black;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-/* Table */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  border: 5px solid black; /* bordure autour du tableau */
-}
-
-/* Colonnes verticales */
-th,
-td {
-  padding: 8px;
-  text-align: center;
-  border-left: 5px solid #0a0a0a;
-  border-right: 5px solid #0f0f0f;
-}
-
-/* En-tête gris foncé */
-thead th {
-  background-color: #555;
-  color: rgb(16, 15, 15);
-}
-
-/* Lignes alternées du tbody */
-tbody tr:nth-child(odd) {
-  background-color: #aaa; /* gris foncé */
-  color: rgb(10, 10, 10);
-}
-
-tbody tr:nth-child(even) {
-  background-color: #eee; /* gris clair */
-  color: rgb(14, 13, 13);
-}
-
-/* Formulaires */
-form {
-  margin: 10px 0;
-}
-label {
-  display: inline-block;
-  width: 120px;
-}
-
-.main-container {
-  display: flex;
-  gap: 20px; /* espace entre les colonnes */
-}
-
-/* Colonne gauche */
-.left-column {
-  flex: 2; /* 2 parts */
-}
-
-/* Colonne droite*/
-.right-column {
-  flex: 1;
-}
-
-.right-column {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-.right-column .messagerie,
-.right-column .contact {
-  flex: 1;
-  border: 5px solid black;
-  padding: 15px;
-  box-sizing: border-box;
-}
-.messagerie {
-  border: 5px solid black;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-.contact {
-  border: 5px solid black;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-.important {
-  border: 5px solid black;
-  padding: 72px;
-  margin-bottom: 20px;
-}
-.urgent {
-  border: 10px dashed red; /* tirets rouges */
   padding: 5px;
-  margin-bottom: auto;
-  animation: clignoter 1s infinite; /* animation qui clignote */
+  border-radius: 4px;
 }
-
-/* Animation clignotante */
 @keyframes clignoter {
   0%,
   50%,
   100% {
-    border-color: red; /* visible */
+    border-color: red;
   }
   25%,
   75% {
-    border-color: transparent; /* invisible */
+    border-color: transparent;
   }
 }
-
-@keyframes clignoter-bg {
-  0%,
-  50%,
-  100% {
-    background-color: rgba(255, 0, 0, 0.1);
-  }
-  25%,
-  75% {
-    background-color: transparent;
-  }
+.header-right .header-info span {
+  font-weight: normal;
+  color: black;
+  margin-left: 15px;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
-  .main-container {
-    flex-direction: column;
-  }
-  .right-column {
-    flex-direction: column;
-  }
+nav a {
+  border: 1px solid black;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin-bottom: 2px;
 }
