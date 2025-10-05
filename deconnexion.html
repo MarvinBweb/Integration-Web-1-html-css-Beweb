@@ -19,19 +19,35 @@
         <img src="image/cadenas.png" alt="cadenas" width="20" height="20" />
       </h1>
 
-      <p class="dnase-alert">⚠ Derniers jours pour votre DNAS!</p>
+      <p class="alert">⚠ Derniers jours pour votre DNAS!</p>
 
       <div class="header-right">
-        <a href="mailto:adresse@example.com" class="messagerie-link"
-          >messagerie(2)</a
-        >
-        <a href="deconnexion.html" class="btn-deconnexion">Déconnexion ✖</a>
+        <div class="header-actions">
+          <a href="mailto:adresse@example.com" class="messagerie-link"
+            >messagerie(2)</a
+          >
+          <a href="deconnexion.html" class="btn-deconnexion">Déconnexion ✖</a>
+        </div>
+
+        <div class="header-info">
+          <span>Entreprise : XXXXXXXXXXXXX</span>
+          <span>Numéro SIRET : 000000000000000</span>
+        </div>
       </div>
     </header>
 
     <nav>
       <ul>
-        <img src="image/domicile.png" alt="maison" width="20" height="20" />
+        <li>
+          <a href="index.html"
+            ><img
+              src="image/domicile.png"
+              class="maison"
+              alt="maison"
+              width="45"
+              height="45"
+          /></a>
+        </li>
         <li><a href="page.html">MES INFOS</a></li>
         <li><a href="page.html">MES AUTORISATION D'ACCES</a></li>
         <li><a href="page.html">MES SALARIES</a></li>
@@ -40,8 +56,9 @@
         <li><a href="page.html">MES OPERATIONS</a></li>
       </ul>
     </nav>
+
     <main>
-      <section id="form-deconnexion" style="display: none">
+      <section id="form-deconnexion">
         <h3>Déconnexion</h3>
         <form>
           <p>Voulez-vous vraiment vous déconnecter ?</p>

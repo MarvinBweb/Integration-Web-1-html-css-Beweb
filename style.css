@@ -63,7 +63,7 @@ header h1 {
 }
 
 /* Paragraphe DNAS centré */
-.dnase-alert {
+.alert {
   flex: 2;
   text-align: center;
   font-weight: bold;
